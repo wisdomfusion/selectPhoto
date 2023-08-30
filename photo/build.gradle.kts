@@ -33,25 +33,22 @@ android {
     }
 }
 
-
-sourceSets {
-    create("main") {
-        java.srcDirs("src/main/java")
-    }
-}
-
-val sourcesJar by tasks.registering(Jar::class) {
-    from(sourceSets["main"].allSource)
+tasks.register("androidSourcesJar", Jar::class) {
     archiveClassifier.set("sources")
+    from(android.sourceSets["main"].java.srcDirs)
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                artifact(tasks.named("androidSourcesJar")) // optional sources
+            }
         }
     }
 }
+
 
 dependencies {
 
