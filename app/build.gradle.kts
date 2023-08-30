@@ -9,7 +9,8 @@ android {
 
     defaultConfig {
         applicationId = "com.common.select_pictures"
-        minSdk = 26
+        minSdk = 21
+        //noinspection OldTargetApi
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
