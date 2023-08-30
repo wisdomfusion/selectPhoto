@@ -1,0 +1,6 @@
+jdk:
+  - openjdk11
+
+install:
+  - ./gradlew :photo:build :photo:publishToMavenLocal
+  - find . -name "*.aar"
