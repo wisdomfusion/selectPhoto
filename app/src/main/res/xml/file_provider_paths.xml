@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--自定义配置分享文件目录访问权限-->
+        <!--  Environment.getExternalStorageDirectory()  -->
+        <external-path
+            name="sample-external-path"
+            path="/" />
+        <!--  Context.getExternalFileDir(String)  -->
+        <external-files-path
+            name="jkj-external-files-path"
+            path="/" />
+        <!--  Context.getExternalCacheDir()  -->
+        <external-cache-path
+            name="jkj-external-cache-path"
+            path="/" />
+        <!--  Context.getFileDir()  -->
+        <files-path
+            name="sample-files-path"
+            path="/" />
+        <!--  Context.getCacheDir()  -->
+        <cache-path
+            name="cache"
+            path="/" />
+        <!-- QQ 官方分享SDK 共享路径 -->
+        <root-path
+            name="opensdk_root"
+            path="" />
+        <external-files-path
+            name="opensdk_external"
+            path="Images/tmp" />
+
+    </paths>
+</resources>
