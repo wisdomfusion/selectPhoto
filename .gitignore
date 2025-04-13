@@ -1,17 +1,98 @@
+# 构建生成的文件
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# 文件适用于 Android Studio / IntelliJ IDEA
 *.iml
-.gradle
-.idea
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+*.iws
+*.ipr
+.idea/
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.log
+
+# 其他编辑器
+.vscode/
+.atom/
+.sublime-project
+.sublime-workspace
+
+# 本地配置文件
 local.properties
-/.idea/
+
+# Proguard
+proguard/
+
+# macOS 系统文件
+.DS_Store
+
+# Windows 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+tmp/
+
+# 导出的 AAR 文件和目录
+/outputs/
+photo/build/tmp/simple-aar/
+
+# Gradle 包装器
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Android Studio 生成的文件
+.navigation/
+output.json
+
+# NDK
+obj/
+.cxx/
+
+# Keystore 文件
+*.jks
+*.keystore
+
+# Google Services
+google-services.json
+
+# Firebase
+google-services.json
+firebase_app_id_file.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# Shell脚本生成的临时文件
+*.out
+*.log
+
+# 版本控制
+vcs.xml

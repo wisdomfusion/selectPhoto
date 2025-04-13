@@ -1,0 +1,44 @@
+# 设置默认的行结束符行为，避免在不同操作系统之间切换时出现问题
+* text=auto
+
+# 确保 Shell 脚本使用 LF 结束符
+*.sh text eol=lf
+gradlew text eol=lf
+
+# Java 源文件
+*.java text diff=java
+
+# Kotlin 源文件
+*.kt text diff=kotlin
+*.kts text diff=kotlin
+
+# XML 文件
+*.xml text diff=xml
+*.xml.dist text diff=xml
+
+# 确保 Gradle 包装器可执行
+gradlew binary
+
+# 声明二进制文件，避免它们被视为文本
+*.jar binary
+*.aar binary
+*.apk binary
+*.so binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# 这些文件应该总是使用 LF 行结束符
+*.properties text eol=lf
+.editorconfig text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.md text eol=lf 

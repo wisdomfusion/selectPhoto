@@ -1,1 +1,21 @@
-/build
+# 构建目录
+/build/
+
+# 本地属性文件
+local.properties
+
+# 自动生成的文件
+/.navigation/
+/captures/
+output.json
+
+# 测试报告
+/test-results/
+/reports/
+
+# 特定于应用模块的生成文件
+*.apk
+*.ap_
+*.aab
+/app/release/
+/app/debug/

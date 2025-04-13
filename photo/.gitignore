@@ -1,1 +1,16 @@
-/build
+# 构建目录
+/build/
+
+# 本地属性文件
+local.properties
+
+# 生成的文件
+*.aar
+*/simple-aar
+
+# 临时文件
+/tmp/
+
+# 生成的 AAR 目录
+/outputs/
+/bin/
